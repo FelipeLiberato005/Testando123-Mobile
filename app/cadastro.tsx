@@ -1,3 +1,4 @@
+import { Link } from 'expo-router';
 import React, { useState } from 'react';
 
 import {
@@ -6,7 +7,7 @@ import {
   StyleSheet,
   Text,
   TextInput,
-  View
+  View,
 } from 'react-native';
 
 export default function App() {
@@ -58,6 +59,10 @@ export default function App() {
       <Text style={styles.titulo}>
         Cadastro Cliente
       </Text>
+
+    <View>
+      <Link href="/login">Ir para a tela de Login</Link>
+    </View>
 
       <TextInput
         style={styles.input}
